@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contentOne {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.bg {
+    background: #e2d1d8;
+}
