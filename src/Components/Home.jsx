@@ -13,6 +13,9 @@ import Img07 from "./Images/03.jpg";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Counting from "./Counting";
+import AutoPlayMethod from "./Carousel";
+import Newsletter from "./Newsletter";
+import Footer from "./Footer";
 
 function Home() {
     const fact = [
@@ -165,7 +168,7 @@ function Home() {
                                         <h1 className="lg:text-xl bg-white pl-2 md:text-3xl sm:text-2xl capitalize font-bold pt-6">
                                             {Team.title}
                                         </h1>
-                                        <h1 className=" lg:text-sm rounded-b-2xl bg-white pl-2 md:text-2xl capitaliz sm:text-sm lg:py-3 md:py-4 sm:py-1 w-full">
+                                        <h1 className=" lg:text-sm rounded-b-2xl bg-white pl-2 md:text-2xl capitaliz sm:text-sm lg:py-3 md:py-4 sm:py-3 w-full">
                                             {Team.desc}
                                         </h1>
                                     </div>
@@ -175,6 +178,16 @@ function Home() {
                     })}
                 </div>
             </div>
+            <div className="customerReview mx-[6%] my-10">
+                <div className="texts">
+                    <p className="flex contentOne text-lg tracking-wider text-pink-600 font-thin">Testimonials</p>
+                    <p className="lg:text-4xl md:text-3xl sm:text-2xl contentOne tracking-widest font-semibold py-2 text-black/80">Customers Talk About Us</p>
+                    <p className="font-semibold text-sm lg:mr-[70%] md:mr-[40%]">Customer support represent the resources within our company that provide technical assistance to consumers after they purchase a product or services</p>
+                </div>
+                <AutoPlayMethod />
+            </div>
+            <Newsletter />
+            <Footer />
         </div>
     );
 }
